@@ -5,10 +5,7 @@ from loguru import logger
 
 load_dotenv()
 
-try:
-    PROJ_ROOT = Path(__file__).resolve().parents[2]
-except IndexError:
-    PROJ_ROOT = Path(__file__).resolve().parent
+PROJ_ROOT = Path(__file__).resolve().parent
 logger.info(f"PROJ_ROOT path is: {PROJ_ROOT}") 
 
 DATA_DIR = PROJ_ROOT / "data"
@@ -23,7 +20,9 @@ FIGURES_DIR = REPORTS_DIR / "figures"
 
 VOCAB_PATH = MODELS_DIR / "vocab.pkl"
 ENCODED_IMAGE_VAL_PATH = MODELS_DIR / "EncodedImageValResNet.pkl" # Used by backend models.py
+# CAPTIONS_PATH = EXTERNAL_DATA_DIR / "captions.txt" # Used by backend main.py
 # MODEL_PATH = MODELS_DIR / "BestModel.pth" # Used by backend models.py
-MODEL_PATH = "/home/ronak/fuse_class/Week2/12_factor_app/data/external/captions.txt"
 # IMAGES_DIR = RAW_DATA_DIR / "Images" # Used by frontend app.py
+
+CAPTIONS_PATH = "/home/ronak/fuse_class/Week2/12_factor_app/data/external/captions.txt"
 IMAGES_DIR = "/home/ronak/fuse_class/Week2/12_factor_app/data/raw/Images"
