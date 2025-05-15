@@ -184,3 +184,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# Ignore image
+Images/
+*.jpg
+
+# Ignore models
+*.pth
+*.pkl

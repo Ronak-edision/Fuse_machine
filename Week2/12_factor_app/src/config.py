@@ -21,6 +21,28 @@ MODELS_DIR = PROJ_ROOT / "models"
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
+
+
+
+# Vocabulary file
+VOCAB_PATH = MODELS_DIR / "vocab.pkl"
+
+# Encoded image embeddings
+ENCODED_IMAGE_VAL_PATH = MODELS_DIR / "EncodedImageValResNet.pkl"
+
+# Captions CSV file
+CAPTIONS_PATH = EXTERNAL_DATA_DIR / "captions.txt"
+
+# Trained model path
+MODEL_PATH = MODELS_DIR / "BestModel.pth"
+
+# Images folder path
+IMAGES_DIR = RAW_DATA_DIR / "Images"
+
+
+
+
+
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135
 try:
